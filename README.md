@@ -1,4 +1,4 @@
-# dataanalysiscapstone
+# dataanalysiscapstone Data Exploration Project in SQL
 
 Analyzing two sources of data, CovidDeaths and CovidVaccinations by creating tables
 and importing the .xlsx into Microsoft SSMS.
