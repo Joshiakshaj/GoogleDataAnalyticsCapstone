@@ -120,7 +120,18 @@ Group by continent
 ORDER BY TotalDeathCount desc;
 
 ----Joining other table, CovidVaccinations to CovidDeaths
-
-
-
+Select *
+from Covid..CovidDeaths dea
+Join Covid..CovidVaccinations vac
+       on dea.location = vac.location
+	   and dea.date= vac.date
+   
+---TOTAL POPULATION VS VACCINATIONS---
+   select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
+	   From Covid..CovidDeaths dea
+	   Join Covid..CovidVaccinations vac
+       on dea.location = vac.location
+	   and dea.date= vac.date
+     
+     
 
